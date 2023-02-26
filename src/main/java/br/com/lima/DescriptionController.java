@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DescriptionController {
 	
-	@RequestMapping(value="/howToUse", method =  RequestMethod.GET)
+	@RequestMapping(value="/readme", method =  RequestMethod.GET)
 	public String howToUse() {
 		
 		
-		return "URL/list ->  to return all systems. \n"
-				+ "URL/systems/{system}/{user} -> to return password \n";
+		return "passwdrepopersonal-production.up.railway.app/list ->  to return all systems. \n"
+				+ "passwdrepopersonal-production.up.railway.app/systems/{system}/{user} -> to return password \n";
 	}
 	
 	
