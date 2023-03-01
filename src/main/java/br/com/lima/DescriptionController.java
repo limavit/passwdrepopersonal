@@ -27,7 +27,8 @@ public class DescriptionController {
 				+ "GTROCOR \n"
 				+ "GOSAT \n"
 				+ "GTR24HDN \n"
-				+ "INDCORP";
+				+ "INDCORP\n"
+				+ "PORTALEC";
 		
 	}
 	@RequestMapping(value="/systems/{system}/{user}", method =  RequestMethod.GET)
@@ -67,6 +68,10 @@ public class DescriptionController {
 		}
 		if (system.toUpperCase().equals("AD")  == true && user.toUpperCase().equals("TBN01372") == true) {
 			return "Vi%998378884%01";
+									
+		}
+		if (system.toUpperCase().equals("PORTALEC")  == true && user.toUpperCase().equals("TBN01372") == true) {
+			return "Vi%9983&B88b";
 									
 		}
 		
